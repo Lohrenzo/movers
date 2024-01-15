@@ -18,7 +18,7 @@ const Hopepage = () => {
   return (
     <main>
         <SwiperBanner />
-        <section 
+        {/* <section 
             className='py-6 px-[2rem] lg:px-[8rem] hidden lg:flex justify-between items-center gap-x-8 text-[2.2rem] text-white font-bold'
             style={{background: 'linear-gradient(-60deg, #292E36, #1F232B)'}} 
         >
@@ -31,7 +31,7 @@ const Hopepage = () => {
 
             <button className='bg-white uppercase rounded py-3 px-6 text-[1rem] text-[#000000] font-semibold'>Book Now</button>
 
-        </section>
+        </section> */}
 
         <section className='bg-white text-[#3B393C] py-[4rem] px-[2rem] lg:px-[8rem]'>
             <h2 className='text-[2rem] font-semibold mb-6'>Welcome to <span className='text-[#96C507]'>Clear Cut</span></h2>

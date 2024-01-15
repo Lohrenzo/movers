@@ -32,7 +32,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-li {
+nav {
   font-family: 'Share Tech Mono', Cambria, Cochin, monospace;
 }
 
@@ -88,7 +88,8 @@ button:focus-visible {
   margin: 10px auto 0 auto;
 }
 .active:hover::before {
-  width: 4rem;
+  width: 3rem;
+  opacity: 0.7 !important;
   opacity: 0.7 !important;
 }
 
