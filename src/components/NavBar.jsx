@@ -27,14 +27,16 @@ const NavBar = () => {
             <NavLink to="/" className="cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110" onClick={closeMenu} activeclass='active'>home</NavLink>
             <NavLink to="/about" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110' onClick={closeMenu} activeclass='active'>about us</NavLink>
             <NavLink to="/services" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110' onClick={closeMenu} activeclass='active'>services</NavLink>
+            <NavLink to="/works" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110' onClick={closeMenu} activeclass='active'>our works</NavLink>
             <NavLink to="/contact" className='cursor-pointer duration-300 transition-all ease-in-out text-black hover:text-black hover:scale-110' onClick={closeMenu} activeclass='active'>contact us</NavLink>
         </ul>
 
-        <ul className={`capitalize px-3 py-4 lg:hidden grid grid-cols-1 gap-x-[2rem] justify-center items-center absolute bg-white top-[18vh] w-[100%] z-10`} style={{ left: menuOpen ? "0" : "-500vw", transition: "left 0.3s ease-in-out" }}>
-          <NavLink to="/" className="cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110" onClick={closeMenu} >home</NavLink>
-          <NavLink to="/about" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110' onClick={closeMenu} >about us</NavLink>
-          <NavLink to="/services" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110' onClick={closeMenu} >services</NavLink>
-          <NavLink to="/contact" className='cursor-pointer duration-300 transition-all ease-in-out text-black hover:text-black hover:scale-110' onClick={closeMenu} >contact us</NavLink>
+        <ul className={`capitalize px-6 py-4 lg:hidden grid grid-cols-1 gap-x-[2rem] justify-center items-center text-left absolute bg-white top-[18vh] w-[100%] z-10`} style={{ left: menuOpen ? "0" : "-500vw", transition: "left 0.3s ease-in-out" }}>
+          <NavLink to="/" className="cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110 w-fit" onClick={closeMenu} >home</NavLink>
+          <NavLink to="/about" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110 w-fit' onClick={closeMenu} >about us</NavLink>
+          <NavLink to="/services" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110 w-fit' onClick={closeMenu} >services</NavLink>
+          <NavLink to="/works" className='cursor-pointer duration-300 transition-all text-black hover:text-black hover:scale-110 w-fit' onClick={closeMenu} >our works</NavLink>
+          <NavLink to="/contact" className='cursor-pointer duration-300 transition-all ease-in-out text-black hover:text-black hover:scale-110 w-fit' onClick={closeMenu} >contact us</NavLink>
         </ul>
     </nav>
   )

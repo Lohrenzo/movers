@@ -47,7 +47,7 @@ export default function SwiperBanner() {
           {/* <img src={image3} className=' object-cover h-full w-full' alt="Movers Banner Image One" /> */}
           <p className='uppercase absolute lg:w-[20%] lg:left-16 lg:top-[35%] top-[60%] lg:text-left text-center lg:mx-0 mx-3 font-extrabold lg:text-[3.4rem] text-[2rem] text-[#ffffff]'>Cheaper than a skip.</p>
         </SwiperSlide>
-        
+
         <SwiperSlide 
           style={{
             backgroundImage: `linear-gradient(45deg, #0000009e, #0000009e), url(${image2})`,
@@ -59,9 +59,9 @@ export default function SwiperBanner() {
           className='flex items-center justify-center h-full w-full' 
         >
           {/* <img src={image2} className=' object-cover h-full w-full' alt="Movers Banner Image Two" /> */}
-          <p className='uppercase lg:absolute lg:top-[80%] top-[10%] font-extrabold lg:mx-0 mx-3 lg:text-[3rem] text-[1.8rem] lg:text-left text-center lg:text-white'>No job is too big, or too small!!</p>
+          <p className='uppercase lg:absolute lg:top-[80%] top-[10%] font-extrabold lg:mx-0 mx-3 lg:text-[3rem] text-[1.8rem] lg:text-left text-center text-white'>No job is too big, or too small!!</p>
         </SwiperSlide>
-        
+
         <SwiperSlide 
           style={{
             backgroundImage: `linear-gradient(45deg, #0000009e, #0000009e), url(${image1})`,

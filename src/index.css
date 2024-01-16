@@ -69,8 +69,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Active */
+
 .active {
   color: #1F232B !important;
+  transform: scale(1.2, 1.2);
 }
 .active:hover {
   opacity: 0.7 !important;
@@ -93,6 +96,54 @@ button:focus-visible {
   opacity: 0.7 !important;
 }
 
+/* End Active */
+
+/* Loader */
+
+.loader {
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  background-color: rgba(154, 154, 154, 0.5);
+  border-radius: 10px;
+  animation: scale-up4 1s linear infinite;
+}
+
+.bar:nth-child(2) {
+  height: 15px;
+  margin: 0 5px;
+  animation-delay: .25s;
+}
+
+.bar:nth-child(3) {
+  animation-delay: .5s;
+}
+
+@keyframes scale-up4 {
+  20% {
+    background-color: #848484;
+    transform: scaleY(1.5);
+  }
+
+  40% {
+    transform: scaleY(1);
+  }
+}
+
+/* End Loader */
+
+
+@media screen and (min-width:320px){
+  .active {
+    color: #979797 !important;
+    transform: scale(1, 1);
+  }  
+}
 
 @media (prefers-color-scheme: light) {
   :root {

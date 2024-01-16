@@ -17,13 +17,16 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 // Components
 import Testimonials from '../components/Testimonials';
 import WelcomeIcon from '../components/WelcomeIcon';
+import Faqs from '../components/Faqs';
+
+// React Router Dom
 import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
     <main>
         <section
-        className='h-[40vh] flex items-center justify-center text-gray-400'
+            className='h-[40vh] flex items-center justify-center text-gray-400'
             style={{
                 backgroundImage: `linear-gradient(45deg, #0000009e, #0000009e), url(${img1})`,
                 backgroundSize: 'cover',
@@ -77,6 +80,8 @@ const About = () => {
         </section>
 
         <Testimonials />
+
+        <Faqs />
 
         <section></section>
     </main>
