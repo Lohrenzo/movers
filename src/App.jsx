@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 // React Router
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 // Components
 import NavBar from './components/NavBar';
@@ -17,6 +17,7 @@ import Contact from './webpages/Contact';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     // Simulate a delay of 1 second
@@ -28,6 +29,11 @@ function App() {
     // Clear the timeout if the component unmounts
     return () => clearTimeout(delay);
   }, [])
+
+  // Scroll to the top of the page when the route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <section className='relative overflow-x-hidden'>

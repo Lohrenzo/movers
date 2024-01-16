@@ -9,9 +9,9 @@ const Contact = () => {
                 style={{
                     backgroundImage: `linear-gradient(45deg, #0000009e, #0000009e), url(${contactImg})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'bottom',
                     backgroundRepeat: 'no-repeat',
-                    backgroundAttachment: 'scroll',
+                    backgroundAttachment: 'fixed',
                 }}
             >
                 <h2 className='font-bold text-[3rem] capitalize'>contact us</h2>
